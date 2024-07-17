@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Run All",
+            "presentation": {
+				"group": "maingroup",
+				"order": 1
+			},
+            "configurations": [
+                "server-side",
+                "client-side"
+            ]
+        }
+    ],
+    "configurations": [ 
+      {
+        "name": "server-side",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run dev"
+      },
+      {
+        "name": "client-side",
+        "type": "msedge",
+        "request": "launch",
+        "url": "http://localhost:3000"
+      },
+    ]
+  }
