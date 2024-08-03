@@ -1,19 +1,19 @@
 <script setup>
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
+    title: "Cursos",
+    path: "/Courses",
   },
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
+    title: "Sobre Nosotros",
     path: "/about",
   },
   {
-    title: "Contact",
+    title: "Contacto",
     path: "/contact",
   },
 ];
@@ -67,19 +67,7 @@ const open = ref(false);
             </a>
           </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
-          >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
-        </div>
       </nav>
-      <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
-        </div>
-      </div>
     </header>
   </LandingContainer>
 </template>
