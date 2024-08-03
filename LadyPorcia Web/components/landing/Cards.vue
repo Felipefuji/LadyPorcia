@@ -9,15 +9,22 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   styleName: "primary",
-  image:"~/assets/img/cursos/pintura.jpeg"
+  image:"pintura.jpeg"
 });
+
+const glob = import.meta.glob("~/assets/img/cursos/*", {
+  eager: true,
+});
+
+const getImageAbsolutePath = (imageName: string): string => {
+  return glob[`/assets/img/cursos/${imageName}`]["default"];
+};
 
 </script>
 <template>
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-opal-flame dark:border-gray-400">
         <a :href="href">
-            <!-- TODO: Hacer que el path del recurso se recupere por las props -->
-            <img class="rounded-t-lg" src="~/assets/img/cursos/pintura.jpeg" alt="" />
+            <img class="rounded-t-lg" :src="getImageAbsolutePath(image)" alt="" />
         </a>
         <div class="p-5">
             <a :href="href">
