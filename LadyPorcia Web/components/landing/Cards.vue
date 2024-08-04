@@ -4,7 +4,7 @@ interface Props {
     title: string;
     description: string;
     image?: string;
-    styleName?: "outline" | "primary" | "inverted" | "muted";
+    styleName?: "outline" | "primary" | "inverted" | "muted" | "orange";
 };
 
 withDefaults(defineProps<Props>(), {
