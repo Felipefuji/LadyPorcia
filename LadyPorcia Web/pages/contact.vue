@@ -22,7 +22,7 @@ definePageMeta({
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>Edificio Torrelaguna 19, El Ejido</span>
+            <span>Blvr. de el Ejido, 463, Planta 19, Puerta 5, 04700, El Ejido</span>
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
