@@ -4,6 +4,10 @@ const menuitems = [
     title: "Cursos",
     path: "/courses",
   },
+  {
+    title: "Talleres",
+    path: "/workshops",
+  },
   // {
   //   title: "Pricing",
   //   path: "/pricing",
