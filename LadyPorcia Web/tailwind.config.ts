@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        'opal-flame': '#eb5f45',
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

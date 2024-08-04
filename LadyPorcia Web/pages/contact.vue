@@ -7,36 +7,35 @@ definePageMeta({
 <template>
   <LandingContainer>
     <LandingSectionhead>
-      <template v-slot:title>Contact</template>
-      <template v-slot:desc>I am here to help.</template>
+      <template v-slot:title>Contacto</template>
+      <template v-slot:desc>Estoy aquí para ayudar.</template>
     </LandingSectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
       <div>
         <h2 class="font-medium text-2xl text-gray-800">
-          Contact Nuxtship Creator
+          Contactanos
         </h2>
         <p class="text-lg leading-relaxed text-slate-500 mt-3">
-          Have something to say? I am here to help. Fill up the form or send
-          email.
+          ¿Necesitas mas informacion? Contacta con nosotros y resolveremos tus dudas.
         </p>
         <div class="mt-5">
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
-            <span>1010 Vienna, Austria</span>
+            <span>Blvr. de el Ejido, 463, Planta 19, Puerta 5, 04700, El Ejido</span>
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-              href="mailto:jakobaichmayr@gmail.com"
-              >jakobaichmayr@gmail.com</a
+              href="mailto:hola@espacioladyporcia.es"
+              >hola@espacioladyporcia.es</a
             >
           </div>
-          <!-- <div class="flex items-center mt-2 space-x-2 text-gray-600">
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
-              href="tel:+1 (234) 5678 999"
-              >+1 (234) 5678 999</a
+              href="tel:+34 600020932"
+              >+34 600020932</a
             >
-          </div> -->
+          </div>
         </div>
       </div>
       <div>
