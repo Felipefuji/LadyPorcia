@@ -22,15 +22,15 @@ const getImageAbsolutePath = (imageName: string): string => {
 
 </script>
 <template>
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-opal-flame dark:border-gray-400">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white dark:border-gray-400">
         <a :href="href">
             <img class="rounded-t-lg" :src="getImageAbsolutePath(image)" alt="" />
         </a>
         <div class="p-5">
             <a :href="href">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{title}}</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">{{title}}</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-white">{{description}}</p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-black">{{description}}</p>
             <LandingLink :href="href" size="md" block :styleName="styleName">Más información</LandingLink>
         </div>
     </div>
