@@ -7,8 +7,8 @@ definePageMeta({
 <template>
   <LandingContainer>
     <LandingSectionhead>
-      <template v-slot:title>Cursos</template>
-      <template v-slot:desc>Cursos disponibles actualmente:</template>
+      <template v-slot:title>{{data.title}}</template>
+      <template v-slot:desc>{{data.description}}</template>
     </LandingSectionhead>
   </LandingContainer>
 </template>
