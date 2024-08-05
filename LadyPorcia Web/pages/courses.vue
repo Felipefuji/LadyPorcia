@@ -10,7 +10,6 @@ definePageMeta({
         <template v-slot:title>Cursos</template>
         <template v-slot:desc>Cursos disponibles actualmente:</template>
       </LandingSectionhead>
-      <LandingLink :href="to" size="md" block :styleName="styleName">Más información</LandingLink>
       <div class="flex flex-wrap justify-center mt-10">
         <div class="p-4 max-w-sm">
             <LandingCards :to="{ name: 'courseDetails-id', params: { id: 1 } }" title="Patronaje y Confección" description="Costura Libre. 2 sesiones de 2h a la semana. Lunes y Miercoles de 16:00-18:00. Impartido por Victoria Monteoliva" image="costura.jpeg" styleName="orange"></LandingCards>
