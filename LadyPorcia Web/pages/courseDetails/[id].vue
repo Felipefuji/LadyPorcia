@@ -3,7 +3,9 @@ definePageMeta({
   layout: "landing",
 });
 
-const responseData = await useFetch('/api/course/getCourseDetails')
+const route = useRoute()
+const pathToGet = '/api/course/getCourseDetails?id=' + route.params.id;
+const responseData = await useFetch(pathToGet)
 </script>
 
 <template>

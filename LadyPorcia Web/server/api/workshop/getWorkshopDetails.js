@@ -3,17 +3,17 @@ import fs from 'fs/promises'
 
 export default defineEventHandler(async (event) => {
     try {
-     
-        const r  = await fs.readFile(path.join(process.cwd(), 'data/workshops','WorkshopsDetails.json'),'utf-8');
-        console.log(r);
+      const { id } = getQuery(event)
+      const r  = await fs.readFile(path.join(process.cwd(), 'data/workshops','WorkshopsDetails.json'),'utf-8');
+      const jsonData = JSON.parse(r);
 
-        const jsonData = JSON.parse(r);
-        console.log(jsonData);
+      // Buscar el objeto con el id correspondiente 
+      const result = jsonData.find(workshop => workshop.id === Number(id));
       
-        return jsonData
-    
-      } catch (error) {
-        console.error('Upload failed:', error);
-      }
-    
+      // Retornar el objeto encontrado
+      return result ? result : { error: 'ID not found' };
+
+    } catch (error) {
+      console.error('Upload failed:', error);
+    }
 })
