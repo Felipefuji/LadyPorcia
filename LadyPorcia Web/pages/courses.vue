@@ -2,6 +2,8 @@
 definePageMeta({
   layout: "landing",
 });
+
+const responseData = await useFetch('/api/course/getAllCourses')
 </script>
 
 <template>
@@ -11,15 +13,9 @@ definePageMeta({
         <template v-slot:desc>Cursos disponibles actualmente:</template>
       </LandingSectionhead>
       <div class="flex flex-wrap justify-center mt-10">
-        <div class="p-4 max-w-sm">
-            <LandingCards href="#" title="Iniciarion a la costura" description="Prueba de iniciacion a la costura" image="costura.jpeg"></LandingCards>
-        </div>
-        <div class="p-4 max-w-sm">
-            <LandingCards href="#" title="Iniciacion a la pintura" description="Prueba de iniciacion a la pintura" image="pintura.jpeg"></LandingCards>
-        </div>
-        <div class="p-4 max-w-sm">
-            <LandingCards href="#" title="Pintura avanzada" description="Prueba curso avanzado de pintura" image="pintura.jpeg"></LandingCards>
+        <div class="p-4 max-w-sm" v-for="item in responseData.data.value">
+            <LandingCards :to="{ name: 'courseDetails-id', params: { id: item.id } }" :title="item.title" :description="item.description" :image="item.image" :styleName="item.styleName"></LandingCards>
         </div>
       </div>
     </LandingContainer>
-  </template>
+</template>

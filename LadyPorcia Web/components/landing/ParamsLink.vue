@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-  href: string;
+  to: any;
   size?: "md" | "lg";
   block?: boolean;
   styleName?: "outline" | "primary" | "inverted" | "muted" | "orange";
@@ -29,7 +29,7 @@ const styles = {
 
 <template>
   <NuxtLink
-    :href="href"
+    :to="to"
     :class="[
       'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
       block && 'w-full',
