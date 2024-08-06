@@ -2,13 +2,16 @@
 definePageMeta({
   layout: "landing",
 });
+
+const responseData = await useFetch('/api/getCourseDetails')
 </script>
 
 <template>
   <LandingContainer>
-    <LandingSectionhead>
-      <template v-slot:title>{{data.title}}</template>
-      <template v-slot:desc>{{data.description}}</template>
+    <LandingSectionhead v-if="responseData.data.value">
+      <template v-slot:title>{{ responseData.data.value.title }}</template>
+      <template v-slot:desc>{{ responseData.data.value.description }}</template>
     </LandingSectionhead>
+    <div v-else>Loading...</div>
   </LandingContainer>
 </template>
