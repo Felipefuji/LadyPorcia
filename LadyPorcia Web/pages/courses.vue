@@ -3,7 +3,7 @@ definePageMeta({
   layout: "landing",
 });
 
-const responseData = await useFetch('/api/getAllCourses')
+const responseData = await useFetch('/api/course/getAllCourses')
 </script>
 
 <template>
