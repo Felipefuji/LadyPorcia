@@ -18,4 +18,4 @@ const responseData = await useFetch('/api/course/getAllCourses')
         </div>
       </div>
     </LandingContainer>
-  </template>
+</template>
