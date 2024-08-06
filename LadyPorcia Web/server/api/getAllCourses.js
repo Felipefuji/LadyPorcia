@@ -4,11 +4,9 @@ import fs from 'fs/promises'
 export default defineEventHandler(async (event) => {
     try {
      
-        const r  = await fs.readFile(path.join(process.cwd(), 'data','AllCourses.json'),'utf-8');
-        console.log(r);
+        const r  = await fs.readFile(path.join(process.cwd(), 'data/courses','AllCourses.json'),'utf-8');
 
         const jsonData = JSON.parse(r);
-        console.log(jsonData);
       
         return jsonData
     
