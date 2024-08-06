@@ -4,7 +4,6 @@ definePageMeta({
 });
 
 const responseData = await useFetch('/api/getAllCourses')
-console.log(responseData.data.value)
 </script>
 
 <template>
