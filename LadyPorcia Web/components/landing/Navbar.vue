@@ -8,10 +8,6 @@ const menuitems = [
     title: "Talleres",
     path: "/workshops",
   },
-  // {
-  //   title: "Pricing",
-  //   path: "/pricing",
-  // },
   {
     title: "Sobre Nosotros",
     path: "/about",
