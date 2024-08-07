@@ -36,6 +36,19 @@ definePageMeta({
               >+34 600020932</a
             >
           </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:instagram" /><a
+              href="http://instagram.com/_u/estudio.ladyporcia/"
+              >@Estudio.ladyporcia</a
+            >
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:facebook" /><a
+              href="http://instagram.com/_u/estudio.ladyporcia/"
+              >Lady porcia espacio creativo
+              </a
+            >
+          </div>
         </div>
       </div>
       <div>
