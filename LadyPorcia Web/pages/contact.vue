@@ -27,24 +27,28 @@ definePageMeta({
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
               href="mailto:hola@espacioladyporcia.es"
+              target="_blank" rel="noopener noreferrer"
               >hola@espacioladyporcia.es</a
             >
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
               href="tel:+34 600020932"
+              target="_blank" rel="noopener noreferrer"
               >+34 600020932</a
             >
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:instagram" /><a
               href="http://instagram.com/_u/estudio.ladyporcia/"
+              target="_blank" rel="noopener noreferrer"
               >@Estudio.ladyporcia</a
             >
           </div>
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:facebook" /><a
               href="http://instagram.com/_u/estudio.ladyporcia/"
+              target="_blank" rel="noopener noreferrer"
               >Lady porcia espacio creativo
               </a
             >
@@ -52,6 +56,7 @@ definePageMeta({
           <div class="flex items-center mt-2 space-x-2 text-gray-600">
             <Icon class="text-gray-400 w-4 h-4" name="uil:whatsapp" /><a
               href="https://wa.me/34600020932"
+              target="_blank" rel="noopener noreferrer"
               >Escribenos por whatsapp
               </a
             >
